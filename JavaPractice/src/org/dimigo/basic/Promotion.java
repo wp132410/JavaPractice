@@ -1,5 +1,11 @@
 package org.dimigo.basic;
 
+/**
+ * 
+ * @author pengpark
+ *
+ */
+
 public class Promotion {
 	
 	public static void main(String[] args) {
