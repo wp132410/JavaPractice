@@ -6,41 +6,43 @@ public class Condition {
 		int bus = 850; // 버스
 		int small_car = 300; // 경차
 		int others = 600; // 그 외
+		int add_price_bus = 300;
+		int add_price = 200;
 		int price = 0;	
 		
-		int dis = 20;
-		String name = "그 외";
+		int dis = 21;
+		String name = "고속버스";
 		
 		switch(name) {
 		case "고속버스" :
 			if(dis >= 0 && dis <= 10) {
-				price = 850;
+				price = bus;
 			}
 			else if(dis <= 20) {
-				price = 1150;
+				price = bus + add_price_bus;
 			}
 			else
-				price = 1450;
+				price = bus + (add_price_bus)*2;
 			break;
 		case "경차" :
 			if(dis >= 0 && dis <= 10) {
-				price = 300;
+				price = small_car;
 			}
 			else if(dis <= 20) {
-				price = 500;
+				price = small_car + add_price;
 			}
 			else
-				price = 700;
+				price = small_car + (add_price)*2;
 			break;
 		case "그 외" :
 			if(dis >= 0 && dis <= 10) {
-				price = 600;
+				price = others;
 			}
 			else if(dis <= 20) {
-				price = 800;
+				price = others + add_price;
 			}
 			else
-				price = 1000;
+				price = others + (add_price)*2;
 			break;
 		default :
 			System.out.println("이름을 정확히 입력해주세요.");
