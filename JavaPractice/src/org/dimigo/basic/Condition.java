@@ -10,7 +10,7 @@ public class Condition {
 		int add_price = 200;
 		int price = 0;	
 		
-		int dis = 21;
+		int dis = 20;
 		String name = "고속버스";
 		
 		switch(name) {
