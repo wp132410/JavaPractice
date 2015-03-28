@@ -53,7 +53,7 @@ public class Condition {
 		System.out.println("<<고속도로 통행료 계산>>");
 		System.out.println("거리 : " + dis + "km");
 		System.out.println("차종 : " + name);
-		System.out.println("통행료 : " + price);
+		System.out.println("통행료 : " + price + "원");
 		
 	}
 }
