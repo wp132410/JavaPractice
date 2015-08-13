@@ -18,4 +18,9 @@ public class Triangle extends Figure {
 		protected double calcArea() {
 				return (width * height) / 2.0;
 		}
+		
+		protected void printCenter() {
+			System.out.print("삼각형 ");
+			super.printCenter();
+		}
 }
