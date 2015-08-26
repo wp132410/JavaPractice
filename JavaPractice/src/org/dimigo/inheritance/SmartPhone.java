@@ -24,12 +24,12 @@ public class SmartPhone {
 				System.out.println(" 결제합니다.");
 		}
 		
-		public void useSpecialFunction(SmartPhone phone) {
-			if(phone instanceof IPhone) {
-					((IPhone) phone).useAirDrop();
+		public void useSpecialFunction() {
+			if(this instanceof IPhone) {
+					((IPhone) this).useAirDrop();
 			}
 			else {
-				((Galaxy) phone).useWirelessCharging();
+				((Galaxy) this).useWirelessCharging();
 			}
 		}
 		
